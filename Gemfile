@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem "twitter-bootstrap-rails"
-rails generate bootstrap:install static
+# rails generate bootstrap:install static
 
 gem 'jquery-rails'
 
