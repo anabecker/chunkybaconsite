@@ -2,6 +2,13 @@
 
 $(document).ready(function(){
 
+<<<<<<< HEAD
+=======
+  $('#myTab a').click(function(e){
+    e.preventDefault();
+    $(this).tab('show');
+  })
+>>>>>>> eugene
   
   
 })
@@ -19,15 +26,31 @@ $(document).ready(function(){
   <p>
     Bacon ipsum dolor sit amet bacon leberkas chicken meatloaf. Meatball sirloin ribeye, tongue sausage ball tip prosciutto cow andouille tail. Drumstick beef spare ribs, frankfurter shank bacon filet mignon. Pork belly t-bone ham hock meatloaf pig short loin strip steak shoulder. Frankfurter rump ground round flank pork belly meatloaf spare ribs ham hock ribeye jowl cow ham. Pork loin cow swine, boudin jerky turkey t-bone drumstick.
   </p>
-  <p>
-    <ul>
-      <li>Bacon is good.</li>
-      <li>FDA Approved.</li>
-      <li>Women who are pregnant or operating heavy machinery should definitely eat bacon.</li>
-      <li>Bacon.</li>
-    </ul>
-  </p>
-  <p>
+
+  <div id="content">
+    <p>
+      <ul class="nav nav-tabs">
+        <li id="myTab"><a href="#bacon_info" data-toggle="tab">Bacon is good.</a></li>
+        <li id="myTab"><a href="#bacon_testimonial" data-toggle="tab">FDA Approved.</a></li>
+        <li id="myTab"><a href="#bacon_recipes" data-toggle="tab">Test</a></li>
+        <li id="myTab"><a href="#bacon_other" data-toggle="tab">Bacon.</a></li>
+      </ul>
+      <div id="my-tab-content" class="tab-content">
+        <div id="bacon_info" class="tab-pane active">
+          <h1>Information about Bacon!</h1>
+        </div>
+        <div id="bacon_testimonial" class="tab-pane">
+          <h1>Testimonials about Bacon!</h1>
+        </div>
+        <div id="bacon_recipes" class="tab-pane">
+          <h1>Recipes involving Bacon!</h1>
+        </div>
+        <div id="bacon_other" class="tab-pane">
+          <h1>Other Bacon recipes</h1>
+        </div>
+      </div>
+    <p>
+  </div>
 
 <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
